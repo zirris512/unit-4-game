@@ -1,5 +1,5 @@
 p {
-    color: white;
+    color: beige;
 }
 
 h1 {
@@ -14,4 +14,20 @@ img {
 body {
     background-image: url("crystal_background.jpg");
     background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+span {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#random-number {
+    background-color: lightblue;
+    color: red;
+    font-size: 3em;
+}
+
+.instruction {
+    background-color: darkviolet;
 }

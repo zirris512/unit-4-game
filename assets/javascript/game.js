@@ -8,6 +8,13 @@ function ranNum() {
     randomNumber = Math.floor((Math.random()*98)+1);
     $("#random-number").text(randomNumber);
 }
+function startOver() {
+    crystalValue = [];
+    ranNum();
+    crystalNumber();
+    totalScore = 0;
+    $("#total-score").text(totalScore);
+}
 
 function crystalNumber() {
     for (var i = 0; i < 4; i++) {
@@ -29,12 +36,15 @@ $(".gems").on("click", function() {
     gemValue = parseInt(gemValue);
     totalScore += gemValue;
     $("#total-score").text(totalScore);
+
     if (totalScore === randomNumber) {
         wins++;
         $("#number-wins").text(wins);
+        startOver();
     }
     else if (totalScore > randomNumber) {
         loss++;
         $("#number-loss").text(loss);
+        startOver();
     }
 })
