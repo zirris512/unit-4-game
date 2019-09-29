@@ -1,0 +1,17 @@
+p {
+    color: white;
+}
+
+h1 {
+    color: aquamarine;
+}
+
+img {
+    max-width: 140%;
+    max-height: 140%;
+}
+
+body {
+    background-image: url("crystal_background.jpg");
+    background-size: 100%;
+}
