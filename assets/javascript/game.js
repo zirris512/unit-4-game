@@ -5,7 +5,7 @@ var totalScore = 0;
 var crystalValue = [];
 
 function ranNum() {
-    randomNumber = Math.floor((Math.random()*98)+1);
+    randomNumber = Math.floor((Math.random()*75)+25);
     $("#random-number").text(randomNumber);
 }
 function startOver() {
